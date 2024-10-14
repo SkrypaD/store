@@ -1,0 +1,21 @@
+footer{
+    background-color: #000;
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.links{
+    height: 100%;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 80px 135px 84px 135px;
+}
+
+.copyright{
+    height: 40px;
+}
