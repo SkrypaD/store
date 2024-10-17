@@ -1,6 +1,11 @@
+import Authorization from '../../Components/AutorizationComponents/Authorization'
+import SignUpForm from '../../Components/AutorizationComponents/SignUpForm'
+
 function SignUp(){
     return (
-        <h1>SignUp page</h1>
+        <Authorization>
+            <SignUpForm/>
+        </Authorization>
     )
 }
 

@@ -1,0 +1,109 @@
+.card{
+    height: 350px;
+    width: 270px;
+    color: white;
+}
+
+.image{
+    height: 250px;
+    background-color: #F5F5F5;
+    margin-bottom: 16px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.image img{
+    max-width: 100%;
+    max-height: 100%;
+} 
+
+.like, .eye{
+    background-color: white;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    padding: 7px;
+}
+
+.like:hover{
+    cursor: pointer;
+}
+
+
+.interact_btns{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.sale_procent{
+    background-color: #DB4444;
+    font-size: 12px;
+    color: white;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 4px 12px;
+    border-radius: 4px;
+}
+
+.add_to_cart{
+    position: absolute;
+    bottom: 0;
+    background-color: #000;
+    color: white;
+    height: 41px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    border-radius: 0 0 4px 4px;
+}
+
+.add_to_cart:hover{
+    cursor: pointer;
+}
+
+
+.cart{
+    height: 30%;
+    margin-right: 8px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: white;
+}
+
+
+.info:hover{
+    color: white;
+}
+
+.name{
+    font-size: 16px;
+    color: black;
+}
+
+.salePrice{
+    color: #DB4444;
+    margin-right: 12px;
+}
+
+.price{
+    color: #7D8184;
+    text-decoration: line-through;
+}
+
+.score{
+    color: #7D8184;
+    display: flex;
+    gap: 8px;
+}
+

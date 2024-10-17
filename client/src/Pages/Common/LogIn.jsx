@@ -1,6 +1,11 @@
+import Authorization from "../../Components/AutorizationComponents/Authorization"
+import LogInForm from "../../Components/AutorizationComponents/LogInForm"
+
 function LogIn(){
     return (
-        <h1>LogIn page</h1>
+        <Authorization>
+            <LogInForm/>
+        </Authorization>
     )
 }
 
