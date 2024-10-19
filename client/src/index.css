@@ -44,6 +44,7 @@ h1 {
 }
 
 button {
+    font-size: 16px;
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -74,3 +75,65 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.black-btn{
+    font-size: 16px;
+    color: black;
+    background-color: inherit;
+    border: 1px solid #000;
+}
+
+.black-btn:hover{
+    color: #363738;
+    border: 1px solid #363738;
+}
+
+.wrapper{
+    font-size: 20px;
+    margin: 80px 135px 140px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.products-element{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.products-element-title{
+    color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Grid doesnt want to work properly i dont have enough time to deal with this so i will go with flex here*/
+.cards-grid{
+    /*display: grid;*/
+    /*grid-template-columns: repeat(4,  1fr);*/
+    /*padding: 0;*/
+    /*margin: 0;*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.red-title{
+    position: relative;
+    font-size: 16px;
+    color: #DB4444;
+}
+
+.red-title::before {
+  content: '';
+  position: absolute;
+  border-radius: 4px;
+  align-self: center;
+  left: -30px; 
+  width: 20px;  
+  height: 40px;
+  background-color: #DB4444; 
+}
+
+
+

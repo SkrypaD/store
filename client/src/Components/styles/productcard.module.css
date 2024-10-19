@@ -23,6 +23,9 @@
     height: 34px;
     border-radius: 50%;
     padding: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .like:hover{

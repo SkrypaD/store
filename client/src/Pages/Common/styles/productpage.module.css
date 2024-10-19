@@ -1,0 +1,35 @@
+.product{
+    margin: 40px 135px 80px;
+}
+
+.product_details{
+    display: flex;
+    gap: 70px;
+    margin-bottom: 140px;
+}
+
+
+.related_grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+
+.related_items__title{
+    position: relative;
+    font-size: 16px;
+    color: #DB4444;
+    margin-bottom: 60px;
+}
+
+.related_items__title::before {
+  content: '';
+  position: absolute;
+  border-radius: 4px;
+  left: -30px; 
+  bottom: -45%;
+  width: 20px;  
+  height: 40px;
+  background-color: #DB4444; 
+}

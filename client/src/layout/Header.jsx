@@ -4,7 +4,7 @@ import SearchBar from "../Components/HeaderComponents/SearchBar"
 
 import styles from './stylemodules/header.module.css'
 
-function Header({logedIn = false}){
+function Header(){
 
     return (
         <>

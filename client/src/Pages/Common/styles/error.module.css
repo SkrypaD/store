@@ -1,0 +1,33 @@
+.error_page{
+    color: black;
+    text-align: center;
+    margin: auto;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main_header{
+    margin-top: 240px;
+    color: inherit;
+    font-size: 110px;
+    margin-bottom: 40px;
+}
+
+.sub_header{
+    color: inherit;
+    font-size: 16px;
+    margin-bottom: 80px;
+}
+
+.go_home_btn{
+    display: block;
+    color: white;
+    padding: 16px 48px;
+    border-radius: 4px;
+    background-color: #DB4444;
+    font-size: 16px;
+    width: 254px;
+    margin-bottom: 140px;
+}

@@ -11,7 +11,7 @@ function RouteHandler() {
         {
             path:'/',
             element: <layout.Layout/>,
-            children:routes.commontRoute
+            children:[...routes.commontRoute, ...routes.userRoute]
         }
     ])
     return <RouterProvider router={router}/>

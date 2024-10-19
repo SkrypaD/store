@@ -3,7 +3,7 @@ import styles from './styles/productcard.module.css'
 import {Link} from 'react-router-dom'
 import ReactStars from 'react-stars'
 
-function ProductCard({props}){
+function ProductCard({props, wishlist=false}){
     const [onCard, setOnCard] = useState(false)
     const {id, productName, salePrice, originalPrice, score, reviews, image} = props
 
@@ -36,12 +36,20 @@ function ProductCard({props}){
                     </div>
                 }
                 <div className={styles.interact_btns}>
+                {wishlist ? 
+                    <div className={styles.like} onClick={addToWishList}>
+                        <img  src='../../public/icons/trash_can.png'/>
+                    </div>
+                    :
+                    <>
                     <div className={styles.like} onClick={addToWishList}>
                         <img  src='../../public/icons/like.png'/>
                     </div>
                     <Link className={styles.eye} to={`/productdetails/${id}`}>
                         <img  src='../../public/icons/eye.png'/>
                     </Link>
+                    </>
+                }
                 </div>
 
             {onCard && <div className={styles.add_to_cart} onClick={addToCart}>

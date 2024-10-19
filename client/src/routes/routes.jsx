@@ -27,12 +27,20 @@ const commontRoute = [
         path: '/productdetails/:id',
         element: <commonPages.ProductDetails/>
     },
+    {
+        path: '*',
+        element: <commonPages.ErrorPage/>
+    },
 ]
 
 const userRoute = [
     {
         path: '/account',
         element: <userPages.Account/>
+    },
+    {
+        path: '/cart',
+        element: <userPages.Cart/>
     },
     {
         path: '/checkout',
