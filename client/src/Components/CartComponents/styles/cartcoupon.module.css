@@ -1,0 +1,13 @@
+.coupon_input{
+    border: 1px solid #000;
+    color: #363738;
+    border-radius: 4px;
+    padding: 16px 24px;
+    width: 300px;
+    font-size: 16px;
+    margin-right: 16px;
+}
+
+.coupon_input:focus{
+    outline: none;
+}

@@ -1,0 +1,70 @@
+.cart_table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.cart_title, .cart_data {
+    padding: 15px;
+}
+
+.cart_title {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+
+.cart_data_name{
+    display: flex;
+    align-items: center;
+}
+
+.cart_data {
+    background-color: #fff;
+}
+
+.cart_img{
+    max-width: 54px;
+    max-height: 54px;
+}
+
+.delete_item{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #DA4444;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.delete_item img{
+    max-width: 50%;
+    max-height: 50%;
+}
+
+thead tr {
+    border-bottom: 2px solid #ccc;
+}
+
+tbody tr {
+    position: relative;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Style the number input */
+input[type="number"] {
+    background-color: inherit;
+    width: 60px;
+    height: 30px;
+    padding: 5px;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+}
+

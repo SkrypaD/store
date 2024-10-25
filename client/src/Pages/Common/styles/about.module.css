@@ -1,0 +1,36 @@
+
+.our_story{
+    flex: 45%;
+    margin-right: 45px;
+}
+
+.statistics{
+    display: flex;
+    justify-content: space-between;
+}
+
+.our_story h2{
+    font-size: 54px;
+    margin-bottom: 40px;
+}
+
+.our_story p{
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.our_story_img{
+    flex: 40%;
+}
+
+.our_story_img img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.employees{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 30px;
+}

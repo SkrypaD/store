@@ -1,0 +1,70 @@
+.card{
+    padding: auto;
+    min-width: 270px;
+    min-height: 230px;
+    background-color: inherit;
+    border-radius: 5px;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+
+.image{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 11px solid #959496;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image img{
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.number{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.statisicName{
+    font-size: 16px;
+}
+
+.highlight_img{
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 11px solid #959496;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.highlight_img img{
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.highlight_card{
+    padding: auto;
+    min-width: 270px;
+    min-height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background-color: #DB4444;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}

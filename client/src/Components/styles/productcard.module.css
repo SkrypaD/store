@@ -54,10 +54,10 @@
 }
 
 .add_to_cart{
+    color:  white !important;
     position: absolute;
     bottom: 0;
     background-color: #000;
-    color: white;
     height: 41px;
     width: 100%;
     display: flex;
@@ -110,3 +110,6 @@
     gap: 8px;
 }
 
+.add{
+    color: white;
+}

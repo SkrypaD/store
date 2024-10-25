@@ -1,0 +1,17 @@
+.billing_details{
+    width: 40%;
+}
+
+.payment{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.payment_option{
+    font-size: 16px;
+    color: black;
+    display: flex;
+    gap: 16px;
+}
+

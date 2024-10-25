@@ -54,7 +54,7 @@ function ProductCard({props, wishlist=false}){
 
             {onCard && <div className={styles.add_to_cart} onClick={addToCart}>
                         <img className={styles.cart} src='../../public/icons/cart.png'/>
-                        <span >Add to cart</span>
+                        <span  className={styles.add}>Add to cart</span>
                         </div>
             }
 
