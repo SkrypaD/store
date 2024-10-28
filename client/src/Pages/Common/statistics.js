@@ -1,22 +1,22 @@
 const statistics = [
     {
-        number : '10,5k',
-        statisticName : 'Sallers active our site',
+        title : '10,5k',
+        subTitle : 'Sallers active our site',
         img : '../../../public/icons/store.png',
     },
     {
-        number : '33k',
-        statisticName : 'Monthly Product Sale',
+        title : '33k',
+        subTitle : 'Monthly Product Sale',
         img : '../../../public/icons/dollar.png',
     },
     {
-        number : '45.5k',
-        statisticName : 'Customers active in our site',
+        title : '45.5k',
+        subTitle : 'Customers active in our site',
         img : '../../../public/icons/bag.png',
     },
     {
-        number : '25k',
-        statisticName : 'Anual gross sale in our site',
+        title : '25k',
+        subTitle : 'Anual gross sale in our site',
         img : '../../../public/icons/moneybag.png',
     },
 ]

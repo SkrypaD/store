@@ -9,7 +9,7 @@ function LogInForm(){
             <input className={styles.input} placeholder='Email or Phone Number'/>
             <input className={styles.input} placeholder='Password'/>
             <div className={styles.btns}>
-                <button>Log In</button>
+                <button className='red-btn'>Log In</button>
                 <Link className={styles.link} to='/login'>Forget Password?</Link>
             </div>
         </div>

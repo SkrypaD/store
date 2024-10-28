@@ -3,10 +3,8 @@ import {useEffect, useState} from "react"
 import styles from './styles/carttable.module.css'
 
 function CartTable({total}){
-    const mouse = {id: 1, productName:'HAVIT HV-G92 Gamepad', salePrice:'120', originalPrice:'160', score:'5', reviews:'88', image: '../../../public/mouse.png' }
-    const mouse2= {id: 2, productName:'HAVIT HV-G92 Gamepad', salePrice:'160', originalPrice:'160', score:'5', reviews:'88', image: '../../../public/mouse.png' }
-    const products = [mouse, mouse2]
     
+    const [products, setProducts] = useState(JSON.parse(localStorage.getItem('cartItems')) || [])
     const [quantity, setQuantity] = useState(Array(products.length).fill(1))
 
     function updatedQuantity(index, newValue){
@@ -14,6 +12,18 @@ function CartTable({total}){
             i === index ? newValue : item
         ))
         setQuantity(updatedQuantity)
+    }
+
+    function deleteItemFromCart(id, index){
+        if(products.length != 0){
+            const updatedSorage = products.filter(product => product.id !== id)
+            setProducts(updatedSorage)
+            const updatedQuantity = quantity
+            console.log(updatedQuantity)
+            setQuantity(updatedQuantity.splice(index, 1))
+            console.log(quantity)
+            localStorage.setItem('cartItems', JSON.stringify(updatedSorage))
+        }
     }
 
     useEffect(() => {
@@ -49,7 +59,7 @@ function CartTable({total}){
                         />
                     </td>
                     <td className={styles.cart_data}>{product.salePrice * quantity[index]}</td>
-                    <td className={styles.delete_item} onClick={() => console.log("deleted")}>
+                    <td className={styles.delete_item} onClick={() => deleteItemFromCart(product.id, index)}>
                         <img src="../../../public/icons/cross.png" alt="delete"/>
                     </td>
                 </tr>

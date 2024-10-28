@@ -20,7 +20,13 @@ function ProductCard({props, wishlist=false}){
     }
 
     function addToCart(){
-        console.log('added to cart')
+        const productStorage = JSON.parse(localStorage.getItem('cartItems')) || []
+        const productExists = productStorage.some(item => item.id === id)
+
+        if(!productExists){
+            const updatedSorage = [...productStorage, props]
+            localStorage.setItem('cartItems', JSON.stringify(updatedSorage))
+        }
     }
 
     return (

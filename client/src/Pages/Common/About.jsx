@@ -5,6 +5,13 @@ import styles from './styles/about.module.css'
 
 import employees from './employees'
 import statistics from './statistics'
+import services from './fullServices'
+
+{
+    /*
+        * TODO: change iconst in services to right ones
+    */
+}
 
 function About() {
 
@@ -29,7 +36,7 @@ function About() {
             </div>
             <div className={styles.statistics}>
                 {statistics.map((card, index) => (
-                    <StatisticCard isHighlighted={index == 1} key={index} img={card.img} number={card.number} statisticName={card.statisticName}/>
+                    <StatisticCard isHighlighted={index == 1} key={index} img={card.img} title={card.title} subTitle={card.subTitle}/>
                 ))}
             </div>
             <div className={styles.employees}>
@@ -37,7 +44,10 @@ function About() {
                     <EmployeeCard key={index} name={employee.name} role={employee.role} socials={{ twitter : 'http://www.twitter.com', instagram : 'https://www.instagram.com', linkedIn : 'https://www.linkedin.com'}}/>
                 ))}
             </div>
-            <div>
+            <div className={styles.statistics}>
+                {services.map((card, index) => (
+                    <StatisticCard  hasBorder={false} key={index} img={card.img} title={card.title} subTitle={card.subTitle}/>
+                ))}
             </div>
         </div>
     )

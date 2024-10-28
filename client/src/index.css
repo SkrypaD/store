@@ -75,6 +75,15 @@ button:focus-visible {
   }
 }
 
+.wrapper{
+    color: black !important;
+    font-size: 20px;
+    margin: 80px 135px 140px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
 .black-btn{
     font-size: 16px;
     color: black;
@@ -87,10 +96,11 @@ button:focus-visible {
     border: 1px solid #363738;
 }
 
+
 .red-btn{
     font-size: 16px;
     border: none;
-    color: white;
+    color: white !important;
     background-color: #DB4444;
     border-radius: 4px;
     padding: 16px 48px;
@@ -102,14 +112,6 @@ button:focus-visible {
 }
 
 
-.wrapper{
-    color: black !important;
-    font-size: 20px;
-    margin: 80px 135px 140px;
-    display: flex;
-    flex-direction: column;
-    gap: 80px;
-}
 
 .products-element{
     display: flex;

@@ -17,6 +17,7 @@ function BillingInput({label, id, required, values, setValues}) {
             {required ? <span className={styles.required}>*</span> : <></>}
             </label>
             <input 
+            required={required}
             className={styles.input_field}
             id={id}
             type="text"
