@@ -5,7 +5,7 @@ import styles from './styles/productpage.module.css'
 
     const mouse = {id: 1, productName:'HAVIT HV-G92 Gamepad', salePrice:'120', originalPrice:'160', score:'5', reviews:'88', image: '../../../public/mouse.png' }
     const mouse2= {id: 2, productName:'HAVIT HV-G92 Gamepad', salePrice:'160', originalPrice:'160', score:'5', reviews:'88', image: '../../../public/mouse.png' }
-    const prod = { productName:'HAVIT HV-G92 Gamepad', description: 'Some plain text here to fill the void in description', salePrice: '120', originalPrice: '160', score: '5', reviews: '88', isAvailable: true}
+    const prod = { productName:'HAVIT HV-G92 Gamepad', description: 'PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for easy bubble free install & mess free removal Pressure sensitive.', salePrice: '120', originalPrice: '160', score: '5', reviews: '88', isAvailable: true}
 function ProductDetails(){
     return (
         <div className='wrapper' style={{color: 'black'}}>
@@ -15,8 +15,7 @@ function ProductDetails(){
             </div>
             <div className="products-element">
                 <div className="products-element-title">
-                    <span className="red-title">Just For You</span>
-                    <button className="black-btn">See All</button>
+                    <span className="red-title">Related Items</span>
                 </div>
                 <div className="cards-grid">
                     <ProductCard  props={mouse}/>

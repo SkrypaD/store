@@ -3,11 +3,20 @@
 }
 
 .product_details{
+    max-height: 500px;
     display: flex;
-    gap: 70px;
     margin-bottom: 140px;
+    justify-content: space-between;
+    gap: 100px;
 }
 
+.product_details > :first-child{
+    flex: 55%;
+}
+
+.product_details > :last-child{
+    flex: 40%;
+}
 
 .related_grid{
     display: grid;
@@ -33,3 +42,4 @@
   height: 40px;
   background-color: #DB4444; 
 }
+
