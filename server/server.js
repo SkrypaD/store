@@ -3,15 +3,15 @@ const cors = require('cors')
 const app = express()
 
 app.use(cors())
+app.use(express.json())
 
+const productRoute = require('./routes/products')
+
+
+app.use('/products', productRoute)
 
 app.get('/', (req, res) => {
-    console.log('request')
-    res.json({
-        name: 'Danil',
-        age: 19,
-        hasJob: false
-    })
+    res.json({ message : 'Hello world' })
 })
 
 
